@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mon Portfolio | HOEKOU KOMI PROSPER</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<header>
+		<nav class="navbar">
+		  <div class="nom">HOEKOU KOMI PROSPER</div>
+		  
+		  <div class="menu-toggle" id="menu-toggle">
+		    <span></span>
+		    <span></span>
+		    <span></span>
+		  </div>
+
+		  <ul class="nav-links" id="nav-links">
+		    <li><a href="#">Accueil</a></li>
+		    <li><a href="#Apropos">À propos</a></li>
+		    <li><a href="#Projets">Projets</a></li>
+		    <li><a href="#Experiences">Expériences</a></li>
+		    <li><a href="#Competences">Compétences</a></li>
+		    <li><a href="#contact">Contact</a></li>
+		  </ul>
+		</nav>
+	</header>
+
+  <section class="hero">
+  	 <h2>Je suis <span class="nom">Prosper</span> , Développeur en devenir passionné par le web et le disign!</h2>
+    <button onclick="location.href='#Projets'">Voir mes projets</button><br>
+  </section>
+
+  <section id="Apropos" class="hero">
+    <h3>À propos</h3>
+    <div class="Apropos-content">
+       <img src="images/principe.jpg" alt="Photo de profil" class="principe">
+       <p class="resume"> Je m'appelle <span class="nom">HOEKOU</span> , passionné par la création de sites web modernes et interactifs.</p>
+	   <p class="resume">Je suis actuellement étudiant en <span class="nom">développement web,</span> et je cherche à améliorer mes compétences en JavaScript,HTML et CSS.</p>
+	   <p class="resume">J'adore transformer mes idées en projets concrets et expérimenter avec les nouvelles technologies.</p>
+    </div>
+  </section>
+
+  <section class="hero"> <a class="btn" href="CV_HOEKOU KOMI PROSPER.pdf" download target="_blank">Télécharger mon CV</a></section>
+
+  <section id="Projets" class="hero">
+    <h3>Mes Projets</h3>
+    <div class="projets-cards"> 
+      <div class="card">
+        <p>Un site web pour ALMA dédiée pour la formation contre le Malaria.</p>
+        <button><a href="https://scorecardhub.org/fr/formations/" target="_blank">Voir le site</a></button>
+      </div>
+      <div class="card">
+        <p>Un site web pour D-CLIC Francophonie dédiée à la Formation aux Metiers Numeriques.</p>
+        <button><a href="https://dclic.francophonie.org/my/"target="_blank">Voir le site</a></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="parcours hero">
+	  <h3 style="color: rgb(51, 38, 233);">Expériences & Compétences</h3>
+
+	  <div class="experience-competence">
+
+	    <div id="Experiences" class="card-p">
+	      <h4>Mes Expériences :</h4>
+	      <ul>
+	        <li><strong>Formation en e-commerce</strong><br>Société OMAR DIGIT, Lomé-TOGO — <em>Mai-Juin 2023</em></li>
+	        <li><strong>Initiation à l’informatique et logiciel (Word, Excel, PowerPoint)</strong><br>AK SUCCESS , Lomé-TOGO <em>Mai-Juin 2021</em></li>
+	      </ul>
+	    </div>
+
+	    <div id="Competences" class="card-p">
+	      <h4>Mes Compétences :</h4>
+	      <ul>
+	        <li><strong>Employé dans une société de vente des produits cosmétiques</strong><br>AGENCE HOPE CENTER-TOGO <em>25 juin 2020</em></li>
+	        <li><strong>Membre d’équipe chargé d’animation sonorisé (DJ) à Togocom</strong> Agence Togocom <em>Novembre 2020 à décembre 2023</em> </li>
+	        <li><strong>Membre de la fondation du bureau national des Corps des Jeunes contre le Paludisme et les Maladies Tropicales Négligées (CJP-TOGO-ALMA)</strong> ALMA scorecardhub <em>Janvier 2025</em></li>
+	      </ul>
+	    </div>
+
+	  </div>
+	</section>
+
+  	<br><br>
+	<hr>
+
+	<section id="contact" class="hero">
+		                <h3 class="resume">Vous avez un <span class="nom">projet en tête ?</span>N'hésitez pas à me <span class="nom">contactez</span></h3>
+		<form class="contact-form">
+			<input type="text" id="nom" placeholder="Nom & Prénom">
+			<input type="email" id="email" placeholder="Adresse email">
+			<textarea id="message" placeholder="Votre sujet" rows="5" required></textarea>
+			<button type="submit">Envoyer</button>
+		</form>
+	</section>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
